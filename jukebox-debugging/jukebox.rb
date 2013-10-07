@@ -54,8 +54,9 @@ def play_song(command, lib)
       albums_hash.each do |album, songs_hash|
         songs_hash[:songs].each do |song|
           if song.downcase == command.downcase
-          puts "Now Playing: #{artist.to_s}: #{album} - #{song}\n\n"
-          return true
+            puts "Now Playing: #{artist.to_s}: #{album} - #{song}\n\n"
+            return true
+          end
         end
       end
     end
@@ -66,5 +67,4 @@ end
 def not_found(command)
   puts "I did not understand '#{command}'!\n\n"
   true
-end
 end
