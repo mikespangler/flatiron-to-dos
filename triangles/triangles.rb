@@ -43,5 +43,5 @@ end
 
 
 
-class TriangleError < StandardError
+class TriangleError < Exception
 end
