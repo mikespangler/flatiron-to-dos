@@ -1,4 +1,4 @@
-require_relative 'person'
+require_relative '../lib/person'
 
 # Create a Person class that can take an arbitrary amount of
 # properties on initialization through a hash.
@@ -15,6 +15,7 @@ RSpec.configure do |config|
   # Use the specified formatter
   config.formatter = :progress # :progress, :html, :textmate
 end
+
 
 describe "Person", "Mass Assignment" do
   
